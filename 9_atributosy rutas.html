@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        algunos atributos globales que estan disponibles para la mayoria de etiquetas en html.
+
+        class-> este atributo se usa para dar estilo atraves de css
+
+        id-> es un identificador unico que se utiliza para seleccionar el elemento desde JS y para hacer navegacion atraves de anclas
+
+        title -> es un aributo que ayuda ala accesibilidad mostrando una descripcion del elemnto al que pertenece,aparece el mensaje en un tooltip.
+
+        data-* -> es un atributo que nos permite guarad algun valor en la etiqueta html
+
+    -->
+<p class="perro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At dolores repellat corrupti voluptatem quae consequuntur, et deleniti vero facere facilis quaerat rerum nulla, nostrum 
+vel eligendi. Molestias pariatur veritatis a.</p>
+
+<p id="id que seconecta con java script">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At dolores repellat corrupti voluptatem quae consequuntur, et deleniti vero facere facilis quaerat rerum nulla, nostrum vel eligendi. Molestias pariatur veritatis a.</p>
+ 
+
+<p title="muestra un cuadrado cuando pasas por el parrafo y te muestra esto que estoy escribiendo ahora #u#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At dolores repellat corrupti voluptatem quae consequuntur, et deleniti vero facere facilis quaerat rerum nulla, nostrum vel eligendi. Molestias pariatur veritatis a.</p>
+    
+
+<!--
+enlaces : 
+es el href normal y todo lo que sabes..
+
+**********************************************************************************
+Rutas absolutas:
+  tienen un protocolo http https y son uncas en la red se suelenutilizar para rutas externas.
+
+Rutas relativas:  
+  pueden ser relativas al punto donde nos encontramos o relativas ala raiz del proyecto.
+
+  No usan protocolo
+
+  si el recurso se encuentra al mismo nivel(en la msima carpeta)pondremos unicamente el nombre del archivo.
+
+  si necesitamos salir de la carpeta actual usaremos ../ y se pone uno por cada nivel (carpeta) de la que queremos salir.
+**********************************************************************************
+atributos de los enlaces
+
+    target: define donde se abrira el recurso solicitado.por norma general siempre que usen rutas absolutas pondran como valor "_blank" tanbien esta el otro valor que nose pone nunca que es "_self" por que ya esta puesto por defecto.
+    target sirve para abrir un enlace en otra pestaña
+
+    dowland:atributo booleano, sirve para descargar el recurso solicitado.
+    Importante,el recurso debe estar en tu mismo servidor.
+
+-->
+
+<!--Rutas absolutas:  -->
+<a href="https://www.google.com">google</a>
+
+<div>
+    <a href="https://www.youtube.com/"target="_blank" >youtoube</a>
+</div>
+
+
+
+<!--Rutas relativas:No usan protocolo-->
+
+<div>
+    <a href="1a/9_conecta.html">conectar</a>
+</div>
+
+<div>
+    <a href="/set/img/d1.jpg" download>descargar</a>
+</div>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus mollitia cum sed error nostrum voluptate quibusdam incidunt suscipit, quasi quas ipsa vel neque velit ea reiciendis fugit nesciunt ab molestias.</p>
+
+
+<footer>
+    <a href="10_direccion.html#post-1"target="_blank">post1</a>
+    <a href="10_direccion.html#post-2"target="_blank">post2</a>
+    <a href="10_direccion.html#post-3"target="_blank">post3</a>
+    <a href="10_direccion.html#post-4"target="_blank">post4</a>
+    <a href="10_direccion.html#post-5"target="_blank">post5</a>
+</footer>
+</body>
+</html>

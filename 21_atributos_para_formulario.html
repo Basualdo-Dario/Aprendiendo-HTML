@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>atributos formulario</title>
+</head>
+<body>
+    <!--
+        placeholder -> da una pista de lo que el usuario tiene que introducir
+
+        requeried -> hace un campo obligatorio
+
+        readonly -> hace que un campo sea de solo lectaura
+
+        disabled -> desactiva el campo, nose podra escrbir en el auto focus.
+
+        min - max  ->establece el minimo y elmaximo de un campo
+        
+        minlenght - maxlenght -> establece el minimo y el maximo de caracteres de un campo de texto
+
+        selected -> equivale a checked en los select , sirve para establecer una opcion diferente.
+
+        autofocus -> para poner el foco al cargar el formulario.
+
+        
+
+    -->
+
+    <form >
+        <input type="text"  placeholder="nombre" autofocus >
+        <input type="text" placeholder="apellido" required >
+        <br><br>
+        <input type="text" value="readonly" readonly>
+        <br><br>
+    
+        <input type="text" value="disabled" disabled>
+
+        <br><br>
+
+        <select name="numeros">
+
+            <option value="uno">uno</option>
+            <option value="dos">dos</option>
+            <option value="tres">tres</option>
+            <option value="cuatro" selected>cuatro</option>
+
+        </select>
+
+        <br><br><br>
+
+        <input type="number" min="18" max="30" placeholder="edad">
+
+        <input type="text" minlength="8" maxlength="10" placeholder="password">
+
+        <input type="submit">
+
+    </form>
+    
+</body>
+</html>

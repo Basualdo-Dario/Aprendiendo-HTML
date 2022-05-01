@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>inputs seccion</title>
+</head>
+<body>
+    <!--
+        radio -> permite seleccionar una unica opcion deuna lista de opciones relaconadas.
+
+        checkbox -> permite seleccionar varias opciones de una lista de opciones relacionadas.
+
+        select -> crea una lista de opciones donde podemos seleccionar una ovarias opciones.
+            cada opcion iria dentro de una etiqueta <option> </option>
+
+            Si tenemos muchas opciones podemos ordenarlas por categorias atraves de la etiqueta <optgroup> eon el atributo label para mostrar la categoria.
+    -->
+
+    <form >
+        <h2>elementos de radio</h2>
+
+        <!-- con name="" ago que los 2 inputs se conecten y se pueda cambiar el tilde-->
+
+        <label> 
+            masculino
+            <input type="radio" name="genero" value="masculino">
+        </label>
+        <br>
+
+        <label> 
+            fenino
+            <input type="radio" name="genero" value="femenino">
+        </label>
+        <!--value es obligatorio por que le pone un nombre al tilde
+             y sabremos que tipo de dato estamos enviando-->
+
+        <!--existe el atributo booleano "cheked" que marca una opcion por defecto-->
+       
+    </form>
+    <br>
+    <br>
+
+    <form>
+        <h2>elementos checkbox</h2>
+        <label> 
+            opcion1
+            <input type="checkbox" name="opcion" value="opcion 1">
+        </label>
+        <label> 
+            opcion 2
+            <input type="checkbox" name="opcion" value="opcion 2">
+        </label>
+        <label> 
+            opcion 3
+            <input type="checkbox" name="opcion" value="opcion 3">
+        </label>
+
+    </form>
+    <br>
+    <br>
+
+<div>
+    <!--select simple-->
+    <form>
+        <h2>elementos de select</h2>
+        <label for="10">seleccione su animal favorito</label>
+        
+       <select name="elementos1" id="10">
+            <option value="perro">perro</option>
+            <option value="gato">gato</option>
+            <option value="conejo">conejo</option>
+            <option value="caballo">caballo</option>
+       </select>
+
+    </form>
+
+    <form>
+        <h2>elementos de select opcion 2</h2>
+        <label for="11">seleccione su animal favorito</label>
+        
+       <select name="elementos2" id="11" multiple>
+            <option value="perro">perro</option>
+            <option value="gato">gato</option>
+            <option value="conejo">conejo</option>
+            <option value="caballo">caballo</option>
+            <option value="araña">perro</option>
+            <option value="leon">gato</option>
+            <option value="cebra">conejo</option>
+            <option value="jirafa">caballo</option>
+       </select>
+
+    </form>
+</div>
+
+<div>
+    <!--select complejo-->
+    <form>
+        <h2>elementos de select complejo</h2>
+        
+       <select name="animales">
+            <optgroup  label="Mascotas" > 
+                <option value="perro">perro</option>
+                <option value="gato">gato</option>
+                <option value="conejo">conejo</option>
+            
+            </optgroup>
+            <optgroup label="Salvajes">
+                <option value="elefante">elefante</option>
+                <option value="serpiente">serpiente</option>
+                <option value="leon">leon</option>
+                <option value="cebra">cebra</option>
+                <option value="jirafa">jirafa</option>
+            </optgroup>
+                
+       </select>
+
+    </form>
+</div>
+
+        <form>
+            <h2>input list</h2>
+            <input type="list"  list="animales">
+           <datalist id="animales">
+            <option value="perro">perro</option>
+            <option value="gato">gato</option>
+            <option value="conejo">conejo</option>
+            <option value="caballo">caballo</option>
+            <option value="araña">araña</option>
+            <option value="leon">leon</option>
+            <option value="cebra">cebra</option>
+            <option value="jirafa">jirafa</option>
+
+           </datalist>
+        </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>Dario Basualdo</footer>
+    
+</body>
+</html>

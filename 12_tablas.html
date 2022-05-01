@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>tablas</title>
+    <style>
+     
+      
+        col:nth-child(1){
+
+           
+           background-color:lightskyblue;
+
+        }
+        
+        col:nth-child(3){
+
+            
+            background-color:lightskyblue;
+
+        }
+
+        
+        col:nth-child(5){
+
+            
+            background-color:lightskyblue;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!--
+        las tablas en html sirven para mostrar contenido tabulado.
+
+        la estructura basica de una tabla se compone de:
+
+        table -> etiqueta que encierra una tabla
+        
+        tr -> table row,etiqueta que construye una fila(abajo)
+
+        td -> table data, etiqueta que construye una celda(derecha)
+
+        truco: el numero de celdas dentro de un td establecera el numero de columnas de la tabla.
+
+        Los titutlos de las tablas se establecen con la etiqueta caption,es una etiquta opcional, y segun la especificacion esa etiqueta se colaca justo despues de la etiqueta table.
+
+        Las cabeceras de la tablas se establecen con la etiqueta thead.
+        dentro tendremos una etiqueta "tr" normal,pero en el caso de las celdas, las estableceremos con la etiqueta
+        "th" enlugar de "td"
+
+
+        El contenido de la tabla debe ir dentro de una etiqueta tbody para representar el cuerpo de la tabla
+
+        de forma opcional podemos colocar un tfoot ala tabla para establecer un pie de tabla, esto es algo que algunas tablas tienen como sumas de cantidades o total.
+
+        Atributos de tablas
+        para hacer que las celdas ocupen masde una fila o mas de una columna tenemos 2 atributos:
+            rowspan:sirve para que una celda ocupe mas de una fila,el valor por defecto es 1.
+
+            colspan:sirve para que una celda ocupe mas de una columna, el valor por defecto es 1.
+
+
+
+        Cuando necesitamos sleccionar una columna, tenemos la etiqueta "<colgroup>", que nos permite seleccionar una columna concreta.
+        Dentro pondremos tantas etiquetas "col" como de columnas tengamos,
+        cada etiqueta "col" a una columna siguendo el mismo orden que tienen en la tabla.
+
+        Si necesitamos que una etiqueta "col" agrupe mas de una columna, tenemos el atributo span, que funciona exactamente igual que "rowspan" y "colspan".
+
+        funciona para agrupar y poder seleccionar cada grupo y darle un estilo.
+
+    -->
+
+    <h1>Tablas</h1>
+
+    <table>
+        <caption>DIAS DEL MÉS</caption>
+
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col span="3">
+            <col>
+            <col>
+          
+        </colgroup>
+
+        <thead>
+     
+        <tr>
+            <th>|Lunes    |</th>
+            <th>|Martes   |</th>
+            <th>|Miercoles|</th>
+            <th>|Jueves   |</th>
+            <th>|Viernes  |</th>
+            <th>|Sabado   |</th>
+            <th>|Domingo  |</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>|01|</td>
+            <td>|02|</td>
+            <td>|03|</td>
+            <td>|04|</td>
+            <td>|05|</td>
+            <td>|06|</td>
+            <td>|07|</td>
+
+        </tr>
+        <tr>
+            <td>|08|</td>
+            <td>|09|</td>
+            <td>|10|</td>
+            <td>|11|</td>
+            <td>|12|</td>
+            <td>|13|</td>
+            <td>|14|</td>
+
+        </tr>
+
+        <tr>
+            <td>|15|</td>
+            <td>|16|</td>
+            <td>|17|</td>
+            <td>|18|</td>
+            <td>|19|</td>
+            <td>|20|</td>
+            <td>|21|</td>
+  
+        </tr>
+
+        <tr>
+            <td>|22|</td>
+            <td>|23|</td>
+            <td>|24|</td>
+            <td>|25|</td>
+            <td>|26|</td>
+            <td>|27|</td>
+            <td>|28|</td>
+
+        </tr>
+
+        <tr>
+            <td>|29|</td>
+            <td>|30|</td>
+
+        </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7" ><i>Dario Basualdo</i></td>
+            </tr>
+
+        </tfoot>
+
+
+
+    </table>
+
+</body>
+</html>

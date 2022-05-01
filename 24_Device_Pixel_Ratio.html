@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!--
+        DPR(Device Pixel Ratio)
+            esla relacion que exite entre los pixeles reales que tiene el dispositivo
+            y los pixeles que tenemos disponible para "pintar" contenido
+
+            DPR = pixeles reales / pixeles disponibles
+              
+    -->
+    
+    <!--con este atributo podes cargar la imagen que programes
+        ej: primero va la imagen grande por predeterminado y le pones la orden de que si pasa las 3x  que se cargue la imagen chica 
+        tambien se puede poner el src por precaucion por si no carga ninguna -->
+
+    <h1>imagenes con srcset</h1>
+    <img srcset="assets/imagenes/elefante.jpg,
+    assets/imagenes/elefante_movil.webp 2x" 
+     alt="elefante">
+
+
+   
+    
+</body>
+</html>

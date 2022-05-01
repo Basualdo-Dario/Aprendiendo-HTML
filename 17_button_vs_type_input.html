@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        input type:
+                    button -> se comporta igual que un boton <button>
+                    submit -> se utiliza para enviar el formulario
+
+                    color  -> se utiliza para especificar un color.
+                    range  -> se utiliza para establecer un rango
+                    number -> se utiliza para valores numericos.
+                    reset  -> se utiliza para resetear el formulario
+                    text -> valor por defecto
+
+                    email -> se utiliza para introducir un email
+                    password -> se utliza para contraseñas
+                    search -> se utiliza para las barras de busquedas
+                    tel -> se utiliza para introducir numero de telefono
+                    url -> se utiliza para introducir urls
+                    
+
+
+                     time -> se utiliza para introducir una hora
+                     month  -> se utiliza para introducir un mes.
+                     week - > se utiliza para introducir el numero de semana del mes.
+                     date   -> se utiliza para introducir una fecha.
+                     datetime-local -> fecha y hora,no funciona en firefox.
+
+                     hidden -> campo oculto,puede contener valor pero nose mostrara.
+
+
+
+    -->
+
+            <FORM>
+             <div>
+                <label for="si">Franco es Gay</label>
+                <input id="si" type="checkbox" >
+             </div>
+             <br>
+            
+              <!--value sirve para escribir adentro-->
+              <!--el input type button non sirve para en viar el formulario como el button original-->
+              <input type="button" value="no envia">
+              <!--si envia el formulario el submit-->
+              <input type="submit" value="envia">
+            
+
+            </FORM>
+
+        <br>
+        <br>
+        <br>
+
+         <form>
+
+            <!--este no anda en firefox, mejor no usarlo por compatibilidad-->
+            <input type="datetime-local">
+
+
+            <!--mejor usarsi-->
+            <input type="date">
+            <input type="time">
+            <br>
+            <!--es otra forma pero no muy buena-->
+            <input type="month">
+            <input type="week">
+        
+        
+        </form>
+        <br>
+        <br>        
+        <br>    
+      
+        <form>
+            <!--en celular el teclado se modificara de acuerdo al input.-->
+            <div>
+            <label for="1">search</label>
+            <input type="search" id="1">
+                
+            </div>
+            <div>
+            <label for="2">tel</label>
+            <input type="telefono" id="2">
+            </div>
+
+            <div>
+            <label for="3">url</label>
+            <input type="url" id="3">      
+            </div>
+
+            <div>
+            <label for="4">email</label>
+            <input type="email" id="4">
+            </div>
+
+            <div>
+            <label for="5">password</label>
+            <input type="password" id="5">
+            </div>
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+ <form >
+
+    <div>     
+<label>
+    color
+    <input type="color">
+</label>
+    </div>
+
+    <div>       
+<label>
+    range
+    <!--con step decimos de cuanto en cuanto queremos que se mueva.
+        tambien tiene "min" que señala cual es el minimo y "max" que señala cual es el maximo.
+       -->
+    <input type="range" step="10" min="0" max="30">
+</label>
+    </div>
+
+    <div>        
+<label >
+    number
+    <input type="number">
+</label>
+    </div>
+
+    <div>       
+<label >
+    text
+    <input type="text">
+</label>
+    </div>
+
+    <div>       
+<label >
+    reset
+    <input type="reset">
+</label>
+        </div>
+</form>
+
+</body>
+</html>

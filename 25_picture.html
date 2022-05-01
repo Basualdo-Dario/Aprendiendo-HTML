@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img{
+
+            max-width: 100%;    
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>imagen con Picture</h1>
+     <picture>
+            <source srcset="assets/imagenes/elefante.jpg " media="(min-width:800px)">
+
+            <img src=" assets/imagenes/elefante_movil.webp" alt="elefante">
+     </picture>
+  
+    <!--lo que hace media es que si el ancho de la pantalla supera los 800 pixeles entonces que ponga la imagen grande y si no supera pone la de por defecto.
+    
+    osea, que para que cargue la imagen grande debe ser mayor a 800 por que el minimo es 800.
+
+    elimg de respaldo va si o si por que sino no funciona-->
+</body>
+</html>
